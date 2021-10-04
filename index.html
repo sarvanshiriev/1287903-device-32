@@ -7,10 +7,13 @@
 
     <body>
         <header class="main-header">
+          <a class="device-logo" href="index.html">
             <img class="logo" src="index.html" alt="Логотип Мазагина «Девайс»" />
+            </a>
             <nav class="navigation">
-                <p><input type="search" name="finde" placeholder="Поиск по сайту" /> <input type="submit" value="Найти" /></p>
-
+              <form action="#" method="get" name="search">
+                <input type="search" name="search" placeholder="Поиск по сайту" />Поиск по сайту<input type="submit" value="Найти">
+              </form>
                 <ul class="navigation-user">
                     <li class="navigation-item">
                         <a class="navigation-link" href="#">Войти</a>
@@ -24,19 +27,15 @@
                         <a class="navigation-link" href="#">Корзина</a>
                     </li>
                 </ul>
-            </nav>
-            <nav class="nav">
-                <form class="sorting-type">
-                    <label for="sorting">Каталог товаров</label>
-                    <select class="select-control" id="sorting" name="sorting">
-                        <option value="virtual">Виртуальная реальность</option>
-                        <option value="monopods">Моноподы для селфи</option>
-                        <option value="action Cameras">Экшн-камеры</option>
-                        <option value="fitness bracelets">Фитнесс-браслеты</option>
-                        <option value="smart watch">Умные часы</option>
-                        <option value="quadrocopters">Квадрокоптеры</option>
-                    </select>
-                </form>
+            <div class="catalog-products">
+                    <a class="catalog">Каталог товаров</a>
+                        <a class="virtual">Виртуальная реальность</a>
+                        <a class="monopods">Моноподы для селфи</a>
+                        <a class="action Cameras">Экшн-камеры</a>
+                        <a class="fitness bracelets">Фитнес-браслеты</a>
+                        <a class="smart watch">Умные часы</a>
+                        <a class="quadrocopters">Квадрокоптеры</a>
+             </div>
                 <ul class="navigation-services">
                     <li class="navigation-item">
                         <a class="navigation-link" href="#">Доставка</a>
@@ -83,19 +82,34 @@
                         </button>
                     </li>
                 </ol>
-                <div class="slide">
-                  <h3 class="phrase">Порхает как бабочка,жарит как пчела!</h3>
-                  <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                  <span class="range">Дальность полета</span>
-                  <span class="range-value">800 м</span>
-                  <span class="damage">Радиус поражения</span>
-                  <span class="damage-value">50 м</span>
+                <div class="slide-description">
+                    <h3 class="phrase">Порхает как бабочка,жарит как пчела!</h3>
+                    <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                    <div class="specifications">
+                    <span class="option">Дальность полета</span>
+                    <span class="option-value">800 м</span>
+                    <span class="option">Радиус поражения</span>
+                    <span class="option-value">50 м</span>
+                    </div>
                 </div>
-                <div class="slide">
-
+                <div class="slide-description">
+                  <h3 class="phrase">Худеем правильно!</h3>
+                    <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                    <div class="specifications">
+                    <span class="option">Без подзарядки</span>
+                    <span class="option-value">48 часов</span>
+                    </div>
                 </div>
-                <div class="slide">
-
+                <div class="slide-description">
+                  <h3 class="phrase">Делай селфи,как Бен Стиллер! </h3>
+                  <p class="description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+                  <div class="specifications">
+                  <span class="option">Длина палки</span>
+                  <span class="option">8,5 м</span>
+                  <span class="option">Вес палки</span>
+                  <span class="option-value">5 кг</span>
+                  <span class="option">Материал</span>
+                  <span class="option-value">Карбон</span>
                 </div>
             </section>
             <section class="catalog-products">
@@ -112,24 +126,38 @@
             <section class="services">
                 <h2 class="visually-hidden">Услуги</h2>
                 <ol class="services-user">
-                    <li class="delivery-item">
-                        <button class="button-delivery">
-                            <span>Доставка</span>
+                    <li class="services-item">
+                        <button class="button-services">
+                            <span class="service">Доставка</span>
                         </button>
                     </li>
-                    <li class="guarantee-item">
-                        <button class="button-guarantee">
-                            <span class="guarantee">Гарантия</span>
+                    <li class="services-item">
+                        <button class="button-services">
+                            <span class="service">Гарантия</span>
                         </button>
                     </li>
-                    <li class="credit-item">
-                        <button class="button-credit">
-                            <span class="credit">Кредит</span>
+                    <li class="services-item">
+                        <button class="button-services">
+                            <span class="service">Кредит</span>
                         </button>
                     </li>
                 </ol>
+                <div >
                 <h3 class="delivery">Доставка</h3>
-                <p class="delivery-home">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                <p class="delivery-home">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                  Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                  </div>
+                  <div >
+                    <h3 class="delivery">Гарантия</h3>
+                    <p class="delivery-home">Если из-за возгорания купленного у нас товара у вас
+                      сгорит дом — не переживайте, мы выдадим вам новый.
+                      Товар, не дом, конечно же. </p>
+                      </div>
+                      <div >
+                        <h3 class="delivery">Кредит</h3>
+                        <p class="delivery-home">Залезть в долговую яму стало проще!
+                          Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+                          </div>
             </section>
             <section class="advantage">
                 <h2 class="order">Доставим редкий товар под заказ</h2>
@@ -188,7 +216,9 @@
         <footer class="page-footer">
             <section class="footer-contacts">
                 <h2 class="visually-hidden">Контакты</h2>
+                <a class="device-logo" href="index.html">
                 <img class="footer-contacts-logo" src="index.html" alt="Логотип Магазин «Девайс»" />
+                </a>
                 <address class="footer-contacts-address">
                     <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
                 </address>
@@ -235,3 +265,5 @@
         </footer>
     </body>
 </html>
+
+
