@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8" />
         <title>Магазин «Девайс»</title>
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
 
     <body>
         <header class="main-header">
             <a class="device-logo" href="index.html">
-                <img class="logo" src="#" alt="Логотип Мазагина «Девайс»" />
+                <img class="logo" src="img/device.svg" width="145" height="36"  alt="Логотип Мазагина «Девайс»" />
             </a>
             <nav class="navigation">
                 <form action="https://echo.htmlacademy.ru" method="get" name="search"><input type="search" name="finder" placeholder="Поиск по сайту" required />Поиск по сайту<input type="submit" value="Найти" /></form>
@@ -25,15 +26,16 @@
                         <a class="navigation-link" href="#">Корзина</a>
                     </li>
                 </ul>
-                <a class="catalog">Каталог товаров</a>
-                <div class="catalog-products">
+                <div class="navigation-elements">
+                <a class="catalog" href="#">Каталог товаров</a>
+
                     <a class="catalog-element" href="#">Виртуальная реальность</a>
                     <a class="catalog-element" href="#">Моноподы для селфи</a>
                     <a class="catalog-element" href="#">Экшн-камеры</a>
                     <a class="catalog-element" href="#">Фитнес-браслеты</a>
                     <a class="catalog-element" href="#">Умные часы</a>
                     <a class="catalog-element" href="#">Квадрокоптеры</a>
-                </div>
+
                 <ul class="navigation-services">
                     <li class="navigation-item">
                         <a class="navigation-link" href="#">Доставка</a>
@@ -47,6 +49,7 @@
                         <a class="navigation-link" href="#">Контакты</a>
                     </li>
                 </ul>
+              </div>
             </nav>
         </header>
         <main class="main-index">
@@ -63,21 +66,21 @@
                 <a class="button button-detail" href="#">Подробнее</a>
                 <ol class="slider-pagination">
                     <li class="slider-pagination-item">
-                        <img class="slider-image" src="#" alt="квадрокоптер" />
+                        <img class="slider-image" src="img/slider-1.png" width="560" height="560" alt="квадрокоптер" />
                         <button class="slider-pagination-button slider-pagination-button-current pagination-active" type="button">
                             <span class="visually-hidden">1 слайд</span>
                         </button>
                     </li>
 
                     <li class="slider-pagination-item">
-                        <img class="slider-image" src="#" alt="фитнес-браслет" />
+                        <img class="slider-image" src="img/slider-2.png" width="560" height="560"  alt="фитнес-браслет" />
                         <button class="slider-pagination-button slider-pagination-button-current" type="button">
                             <span class="visually-hidden">2 слайд</span>
                         </button>
                     </li>
 
                     <li class="slider-pagination-item">
-                        <img class="slider-image" src="#" alt="селфи-палка" />
+                        <img class="slider-image" src="img/slider-3.png" width="560" height="560"  alt="селфи-палка" />
                         <button class="slider-pagination-button slider-pagination-button-current" type="button">
                             <span class="visually-hidden">3 слайд</span>
                         </button>
@@ -120,12 +123,12 @@
             <section class="catalog-products">
                 <h2 class="visually-hidden">Каталог товаров</h2>
                 <ul class="catalog-list">
-                    <li class="catalog-item"><a class="catalog-link" href="#">Виртуальная реальность</a></li>
-                    <li class="catalog-item"><a class="catalog-link" href="#">Моноподы для селфи</a></li>
-                    <li class="catalog-item"><a class="catalog-link" href="#">Экшн-камеры</a></li>
-                    <li class="catalog-item"><a class="catalog-link" href="#">Фитнесс-браслеты</a></li>
-                    <li class="catalog-item"><a class="catalog-link" href="#">Умные часы</a></li>
-                    <li class="catalog-item"><a class="catalog-link" href="#">Квадрокоптеры</a></li>
+                    <li class="catalog-item"><a class="catalog-link virtual" href="#">Виртуальная реальность</a></li>
+                    <li class="catalog-item"><a class="catalog-link monopods" href="#">Моноподы для селфи</a></li>
+                    <li class="catalog-item"><a class="catalog-link cameras" href="#">Экшн-камеры</a></li>
+                    <li class="catalog-item"><a class="catalog-link fitness" href="#">Фитнесс-браслеты</a></li>
+                    <li class="catalog-item"><a class="catalog-link watch" href="#">Умные часы</a></li>
+                    <li class="catalog-item"><a class="catalog-link quadrocopters" href="#">Квадрокоптеры</a></li>
                 </ul>
             </section>
             <section class="services">
@@ -147,17 +150,17 @@
                         </button>
                     </li>
                 </ol>
-                <div>
+                <div class="delivery">
                     <h3 class="tab-title">Доставка</h3>
-                    <p class="tab-paragraph">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                    <p class="tab-paragraph">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно! Ведь<br> мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 </div>
-                <div>
-                    <h3 class="tab-title">Гарантия</h3>
-                    <p class="tab-paragraph">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                <div class="garanty">
+                    <h3 class="tab-title ">Гарантия</h3>
+                    <p class="tab-paragraph">Если из-за возгорания купленного у нас товара у вас<br> сгорит дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
                 </div>
-                <div>
-                    <h3 class="tab-title">Кредит</h3>
-                    <p class="tab-paragraph">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+                <div class="credit">
+                    <h3 class="tab-title ">Кредит</h3>
+                    <p class="tab-paragraph">Залезть в долговую яму стало проще! Кредитные<br> консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для банка, разумеется.</p>
                 </div>
             </section>
             <section class="advantage">
@@ -218,7 +221,7 @@
             <section class="footer-contacts">
                 <h2 class="visually-hidden">Контакты</h2>
                 <a class="device-logo" href="index.html">
-                    <img class="footer-contacts-logo" src="#" alt="Логотип Магазин «Девайс»" />
+                    <img class="footer-contacts-logo" src="img/logo2.svg" width="145" height="36" alt="Логотип Магазин «Девайс»" />
                 </a>
                 <address class="footer-contacts-address">
                     <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
