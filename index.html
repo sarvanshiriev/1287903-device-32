@@ -12,7 +12,9 @@
                 <img class="logo" src="img/device.svg" width="145" height="36" alt="Логотип Мазагина «Девайс»" />
             </a>
             <nav class="navigation">
+                <div class="navigation-header">
                 <form action="https://echo.htmlacademy.ru" method="get" name="search"><input type="search" name="finder" placeholder="Поиск по сайту" required /><input type="submit" value="Найти" /></form>
+                
                 <ul class="navigation-user">
                     <li class="navigation-item">
                         <a class="navigation-link" href="#">Войти</a>
@@ -26,18 +28,13 @@
                         <a class="navigation-link" href="#">Корзина</a>
                     </li>
                 </ul>
-                <div class="navigation-elements">
-                    <a class="navigation-element" href="#">Каталог товаров</a>
-
-                    <a class="navigation-link" href="#">Виртуальная реальность</a>
-                    <a class="navigation-link" href="#">Моноподы для селфи</a>
-                    <a class="navigation-link" href="#">Экшн-камеры</a>
-                    <a class="navigation-link" href="#">Фитнес-браслеты</a>
-                    <a class="navigation-link" href="#">Умные часы</a>
-                    <a class="navigation-link" href="#">Квадрокоптеры</a>
-
+            </div>
+              <div class="navigation-elements">
                     <ul class="navigation-services">
-                        <li class="navigation-item">
+                        <li class="navigation-item-element">
+                            <a class="navigation-element" href="#">Каталог товаров</a>
+        </li>
+                        <li class="navigation-item-element">
                             <a class="navigation-element" href="#">Доставка</a>
                         </li>
 
@@ -45,10 +42,33 @@
                             <a class="navigation-element" href="#">Гарантия</a>
                         </li>
 
-                        <li class="navigation-element">
+                        <li class="navigation-item-element">
                             <a class="navigation-element" href="#">Контакты</a>
                         </li>
                     </ul>
+              </div>
+              <div class="navigation-catalog">
+              <ul class="link-list">
+
+                <li class="link-list-item">
+                                    <a class="navigation-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="link-list-item">
+                                    <a class="navigation-link" href="#">Моноподы для селфи</a>
+                </li>
+                <li class="link-list-item">
+                                    <a class="navigation-link" href="#">Экшн-камеры</a>
+                </li>
+                <li class="link-list-item">
+                                    <a class="navigation-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="link-list-item">
+                                    <a class="navigation-link" href="#">Умные часы</a>
+                </li>
+                <li class="link-list-item">
+                                    <a class="navigation-link" href="#">Квадрокоптеры</a>
+                </li>
+                </ul>
                 </div>
             </nav>
         </header>
@@ -58,12 +78,13 @@
                 <h2 class="visually-hidden" hidden>Хиты продаж</h2>
 
                 <button class="slider-button slider-prev" type="button">
-                    <span class="visually-hidden">Предыдущий слайд</span>
+                    <span class="visually-hidden" hidden>Предыдущий слайд</span>
                 </button>
                 <button class="slider-button slider-next" type="button">
-                    <span class="visually-hidden">Следующий слайд</span>
+                    <span class="visually-hidden" hidden>Следующий слайд</span>
                 </button>
                 <button class="button button-detail" type="submit">Подробнее</button>
+                <div class="product-slider">
                 <ol class="slider-pagination">
                     <li class="slider-pagination-item">
                         <img class="slider-image" src="img/slider-1.png" width="560" height="560" alt="квадрокоптер" />
@@ -86,6 +107,8 @@
                         </button>
                     </li>
                 </ol>
+                </div>
+                <div class="product-description">
                 <div class="slide-description">
                     <h3 class="slider-number">01</h3>
                     <h3 class="tab-title">
@@ -136,6 +159,7 @@
                         <span class="option-value">Карбон</span>
                     </div>
                 </div>
+                </div>
             </section>
             <section class="catalog-products">
                 <h2 class="visually-hidden" hidden>Каталог товаров</h2>
@@ -160,6 +184,7 @@
             </section>
             <section class="services">
                 <h2 class="visually-hidden" hidden>Услуги</h2>
+                <div class="servicse-list">
                 <ol class="services-user">
                     <li class="services-item">
                         <button class="button button-services" type="button">
@@ -177,6 +202,8 @@
                         </button>
                     </li>
                 </ol>
+                </div>
+                <div class="description-list">
                 <div class="delivery">
                     <h3 class="tab-title">Доставка</h3>
                     <p class="tab-paragraph">
@@ -201,14 +228,16 @@
                         условия кредита. Выгодные для банка, разумеется.
                     </p>
                 </div>
+                </div>
             </section>
             <section class="advantage">
-                <span class="auto-delivery visually-hidden" hidden>Машина</span>
+                <span class="auto-delivery visually-hidden" >Машина</span>
                 <h2 class="order">Доставим редкий товар под заказ</h2>
                 <button class="info" type="button">
                     <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
             </section>
+            <div class="index-columns">
             <section class="about-us">
                 <h2 class="tab-title">О нас</h2>
                 <p class="advantage-range">
@@ -251,8 +280,10 @@
 
                 <button class="button button-feedback" type="submit">Напишите нам</button>
             </section>
+            </div>
             <section class="newsletter">
-                <h2 class="tab-title">Подпишитесь на рассылку</h2>
+                <div class="mailing">
+                <h2 class="tab-title">Подпишитесь<br> на рассылку</h2>
                 <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post" name="mailing">
                     <p class="newsletter-email">
                         <label class="visually-hidden" for="newsletter-email">Email</label>
@@ -262,12 +293,15 @@
                         Подписаться
                     </button>
                 </form>
+            </div>
+<div class="mailing-description">
                 <p class="e-mail-advantage">
                     Еженедельный дайджест с обзорами новинок,<br />
                     длительными тест-драйвами, распаковками, а также акции,<br />
                     спецпредложения и вот это вот всё.
                 </p>
                 <p class="e-mail-free">Это бесплатно</p>
+            </div>
             </section>
         </main>
         <footer class="page-footer">
