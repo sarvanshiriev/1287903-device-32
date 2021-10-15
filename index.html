@@ -38,7 +38,7 @@
                             <a class="navigation-element" href="#">Доставка</a>
                         </li>
 
-                        <li class="navigation-item">
+                        <li class="navigation-item-element">
                             <a class="navigation-element" href="#">Гарантия</a>
                         </li>
 
@@ -77,40 +77,10 @@
             <section class="bestsellers">
                 <h2 class="visually-hidden" hidden>Хиты продаж</h2>
 
-                <button class="slider-button slider-prev" type="button">
-                    <span class="visually-hidden" hidden>Предыдущий слайд</span>
-                </button>
-                <button class="slider-button slider-next" type="button">
-                    <span class="visually-hidden" hidden>Следующий слайд</span>
-                </button>
-                <button class="button button-detail" type="submit">Подробнее</button>
-                <div class="product-slider">
-                <ol class="slider-pagination">
-                    <li class="slider-pagination-item">
-                        <img class="slider-image" src="img/slider-1.png" width="560" height="560" alt="квадрокоптер" />
-                        <button class="slider-pagination-button slider-pagination-button-current pagination-active" type="button">
-                            <span class="visually-hidden">1 слайд</span>
-                        </button>
-                    </li>
-
-                    <li class="slider-pagination-item">
-                        <img class="slider-image" src="img/slider-2.png" width="560" height="560" alt="фитнес-браслет" />
-                        <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                            <span class="visually-hidden">2 слайд</span>
-                        </button>
-                    </li>
-
-                    <li class="slider-pagination-item">
-                        <img class="slider-image" src="img/slider-3.png" width="560" height="560" alt="селфи-палка" />
-                        <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                            <span class="visually-hidden">3 слайд</span>
-                        </button>
-                    </li>
-                </ol>
-                </div>
                 <div class="product-description">
-                <div class="slide-description">
-                    <h3 class="slider-number">01</h3>
+                    <div class="first-slider">
+                    <img class="slider-image" src="img/slider-1.png" width="560" height="560" alt="квадрокоптер" />
+                    <div class="slide-description">
                     <h3 class="tab-title">
                         Порхает как бабочка,<br />
                         жалит как пчела!
@@ -126,8 +96,10 @@
                         <span class="option-value">50 м</span>
                     </div>
                 </div>
-                <div class="slide-description">
-                    <h3 class="slider-number">02</h3>
+                </div>
+                <div class="second-slider">
+                    <img class="slider-image" src="img/slider-2.png" width="560" height="560" alt="фитнес-браслет" />
+                    <div class="slide-description">
                     <h3 class="tab-title">
                         Худеем<br />
                         правильно!
@@ -141,7 +113,10 @@
                         <span class="option-value">48 часов</span>
                     </div>
                 </div>
-                <div class="slide-description">
+                </div>
+                <div class="third-slider">
+                    <img class="slider-image" src="img/slider-3.png" width="560" height="560" alt="селфи-палка" />
+                    <div class="slide-description">
                     <h3 class="tab-title">
                         Делай селфи,<br />
                         как Бен Стиллер!
@@ -159,6 +134,40 @@
                         <span class="option-value">Карбон</span>
                     </div>
                 </div>
+                </div>
+                </div>
+                <div class="product-slider">
+                <button class="slider-button slider-prev" type="button">
+                    <span class="visually-hidden" >Предыдущий слайд</span>
+                </button>
+                <button class="slider-button slider-next" type="button">
+                    <span class="visually-hidden" >Следующий слайд</span>
+                </button>
+                
+             
+                <ol class="slider-pagination">
+                    <li class="slider-pagination-item">
+                        
+                        <button class="slider-pagination-button slider-pagination-button-current pagination-active" type="button">
+                            <span class="visually-hidden">1 слайд</span>
+                        </button>
+                    </li>
+
+                    <li class="slider-pagination-item">
+                        
+                        <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                            <span class="visually-hidden">2 слайд</span>
+                        </button>
+                    </li>
+
+                    <li class="slider-pagination-item">
+                        
+                        <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                            <span class="visually-hidden">3 слайд</span>
+                        </button>
+                    </li>
+                </ol>
+                <button class="button button-detail" type="submit">Подробнее</button>
                 </div>
             </section>
             <section class="catalog-products">
