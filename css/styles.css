@@ -40,6 +40,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .button {
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -92,7 +93,7 @@ justify-content: space-between;
 margin-left: 60px;
 }
 .navigation-user{
-  display: flex;
+display: flex;
 width:  538px;
 justify-content: space-between;
 }
@@ -100,6 +101,8 @@ justify-content: space-between;
 .navigation-item:nth-child(2){flex-grow: 1;}
 .navigation-item:nth-child(3){flex-grow: 1;}
 
+input{border: none;
+background-color: transparent;}
 .navigation-services{
   display: flex;
   justify-content: space-around;
@@ -114,6 +117,35 @@ margin-left: 60px;
 .navigation-item-element:nth-child(3){flex-grow: 2;}
 .navigation-item-element:nth-child(4){flex-grow: 1;}
 
+.first-slider, .second-slider, .third-slider
+{display: flex;
+  width: 1161px;
+  height: 560px;
+margin: 0 auto;}
+.product-slider{
+  display: flex;
+  margin-left: 700px; 
+}
+
+.catalog-list{
+margin: 0 auto;
+display: flex;
+margin-top: 70px;
+width: 1160px;
+height: 253px;
+}
+.catalog-link {
+  display: block;
+  height: 100%;
+}
+.catalog-item {
+  background-color: #ffe17f;
+  width: 160px;
+  height: 160px;
+  font-family: Raleway;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
 .tab-title {
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -168,17 +200,6 @@ background-color: #FFE17F;
   font-style: normal;
   color: #000;
 }
-.page-footer {
-  background-color: #444444;
-}
-.footer-navigation-link,
-.footer-contacts-address,
-.footer-contacts-phone {
-  color: #ffffff;
-}
-.footer-contacts-phone {
-  text-decoration: none;
-}
 .delivery-company-item {
   font-weight: 700;
   font-size: 18px;
@@ -188,31 +209,7 @@ background-color: #FFE17F;
 .newsletter {
   background-color: #f0f0f0;
 }
-.catalog-products{
-  margin-top: 70px;
-  width: 1160px;
-height: 253px;
-margin-left: auto;
-margin-right: auto;
-}
-.catalog-list{
-  width: 1160px;
-height: 253px;
-margin: 0 auto;
-}
-.catalog-link {
-  display: block;
-  height: 100%;
-}
-.catalog-item {
-  background-color: #ffe17f;
-  width: 160px;
-  height: 160px;
-  display: inline-block;
-  font-family: Raleway;
-  line-height: 24px;
-  letter-spacing: -0.02em;
-}
+
 .virtual {
   background-image: url("../img/category-1.svg");
   background-size: 160px 160px;
@@ -332,26 +329,12 @@ margin: 0 auto;
   opacity: 0.3;
 }
 
-
-
-
-.first-slider, .second-slider, .third-slider{display: flex;
-  width: 1161px;
-  height: 560px;
-margin: 0 auto;}
-.product-slider{
-  display: flex;
-  margin-left: 700px;
-  
-}
-
 .services{display: flex;
   width: 1440px;
 margin: 69px auto 90px;
 justify-content: space-around;
 align-items: flex-start;
 }
-
 .advantage{display: flex;
   justify-content: space-between;
 align-items:center;
@@ -380,6 +363,41 @@ height: 562px;
   justify-content: space-around;
   align-items: center;
 }
+.inner-header .tab-title {
+  margin-left: 200px;
+  margin-right: 680px;
+}
+
+.breadcrumbs{display: flex;
+  width: 425px;
+  height: 19px;
+justify-content: space-between;
+margin-left: 200px;}
+.catalog-goods{
+  display: flex;
+justify-content: center;}
+.product-list{
+  display: flex;
+  width: 760px;
+height: 1067px;
+flex-wrap: wrap;
+}
+.pagination{display: flex;
+  width: 760px;
+  height: 70px;
+justify-content: space-between;
+align-items: center;}
+.page-footer {
+  background-color: #444444;
+}
+.footer-navigation-link,
+.footer-contacts-address,
+.footer-contacts-phone {
+  color: #ffffff;
+}
+.footer-contacts-phone {
+  text-decoration: none;}
+
 .page-footer{display: flex;
   align-items: center;
   width: 1440px;

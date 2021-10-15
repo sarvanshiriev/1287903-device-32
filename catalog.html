@@ -11,13 +11,12 @@
                 <img class="logo" src="img/device.svg" width="145" height="36" alt="Логотип Мазагина «Девайс»" />
             </a>
             <nav class="navigation">
-                <form action="https://echo.htmlacademy.ru" method="get" name="search"><input type="search" name="finder" placeholder="Поиск по сайту" required /><input type="submit" value="Найти" /></form>
+                <div class="navigation-header">
+                <form action="https://echo.htmlacademy.ru" method="get" name="search" ><input type="search" name="finder" placeholder="Поиск по сайту" required /><input type="submit" value="Найти" /></form>
+                
                 <ul class="navigation-user">
                     <li class="navigation-item">
-                        <a class="navigation-link" href="#">Коля Петухов</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="#">Выйти</a>
+                        <a class="navigation-link" href="#">Войти</a>
                     </li>
 
                     <li class="navigation-item">
@@ -28,29 +27,47 @@
                         <a class="navigation-link" href="#">Корзина</a>
                     </li>
                 </ul>
-                <div class="navigation-elements">
-                    <a class="navigation-element" href="#">Каталог товаров</a>
-
-                    <a class="navigation-link" href="#">Виртуальная реальность</a>
-                    <a class="navigation-link" href="#">Моноподы для селфи</a>
-                    <a class="navigation-link" href="#">Экшн-камеры</a>
-                    <a class="navigation-link" href="#">Фитнес-браслеты</a>
-                    <a class="navigation-link" href="#">Умные часы</a>
-                    <a class="navigation-link" href="#">Квадрокоптеры</a>
-
+            </div>
+              <div class="navigation-elements">
                     <ul class="navigation-services">
-                        <li class="navigation-item">
+                        <li class="navigation-item-element">
+                            <a class="navigation-element" href="#">Каталог товаров</a>
+        </li>
+                        <li class="navigation-item-element">
                             <a class="navigation-element" href="#">Доставка</a>
                         </li>
 
-                        <li class="navigation-item">
+                        <li class="navigation-item-element">
                             <a class="navigation-element" href="#">Гарантия</a>
                         </li>
 
-                        <li class="navigation-element">
+                        <li class="navigation-item-element">
                             <a class="navigation-element" href="#">Контакты</a>
                         </li>
                     </ul>
+              </div>
+              <div class="navigation-catalog">
+              <ul class="link-list">
+
+                <li class="link-list-item">
+                                    <a class="navigation-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="link-list-item">
+                                    <a class="navigation-link" href="#">Моноподы для селфи</a>
+                </li>
+                <li class="link-list-item">
+                                    <a class="navigation-link" href="#">Экшн-камеры</a>
+                </li>
+                <li class="link-list-item">
+                                    <a class="navigation-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="link-list-item">
+                                    <a class="navigation-link" href="#">Умные часы</a>
+                </li>
+                <li class="link-list-item">
+                                    <a class="navigation-link" href="#">Квадрокоптеры</a>
+                </li>
+                </ul>
                 </div>
             </nav>
         </header>
@@ -69,7 +86,8 @@
                     </li>
                 </ul>
             </section>
-            <section class="catalog-products">
+            <section class="catalog-goods">
+                <div class="filter">
                 <h2 class="products-filter">Фильтр</h2>
                 <form class="catalog-filter" action="#" method="get" name="filter">
                     <fieldset class="catalog-filter-group">
@@ -146,6 +164,8 @@
                     </fieldset>
                     <button class="button" type="submit">Показать</button>
                 </form>
+                </div>
+                <div class="sporting-catalog-products">
                 <form class="sorting-type" action="#" method="get" name="sorting-product">
                     <label for="sorting-product">Сортировка:</label>
                     <select class="control" id="sorting-product" name="sorting-product">
@@ -251,6 +271,7 @@
                         </a>
                     </li>
                 </ul>
+                </div>
             </section>
         </main>
         <footer class="page-footer">
