@@ -96,6 +96,7 @@ margin-left: 60px;
 display: flex;
 width:  538px;
 justify-content: space-between;
+list-style-type: none;
 }
 .navigation-item:nth-child(1){flex-grow: 2;}
 .navigation-item:nth-child(2){flex-grow: 1;}
@@ -111,6 +112,12 @@ height: 50px;
 align-items: center;
 margin-top: 29px;
 margin-left: 60px;
+list-style-type: none;
+}
+.link-list{
+  list-style-type: none;
+  display: flex;
+  gap: 29px;
 }
 .navigation-item-element:nth-child(1){flex-grow: 3;}
 .navigation-item-element:nth-child(2){flex-grow: 1;}
@@ -124,7 +131,7 @@ margin-left: 60px;
 margin: 0 auto;}
 .product-slider{
   display: flex;
-  margin-left: 700px; 
+  margin-left: 700px;
 }
 
 .catalog-list{
@@ -133,6 +140,8 @@ display: flex;
 margin-top: 70px;
 width: 1160px;
 height: 253px;
+list-style-type: none;
+gap: 40px;
 }
 .catalog-link {
   display: block;
@@ -152,7 +161,7 @@ height: 253px;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
-  
+
 }
 .option {
   font-size: 16px;
@@ -346,15 +355,12 @@ display: flex;
 margin: 0 auto;
 width: 1120px;
 justify-content: space-between;
-align-items: center;}
+align-items:stretch;}
 .about-us{
   width: 560px;
-height: 562px;
-
 }
 .contacts{
   width: 560px;
-  height: 562px;
   }
 .newsletter{
   display: flex;
@@ -363,30 +369,35 @@ height: 562px;
   justify-content: space-around;
   align-items: center;
 }
-.inner-header .tab-title {
-  margin-left: 200px;
-  margin-right: 680px;
+.inner-header  {
+ margin-left: auto;
+ margin-right: auto;
 }
-
+.monopod{margin-left: 200px;}
 .breadcrumbs{display: flex;
   width: 425px;
   height: 19px;
 justify-content: space-between;
-margin-left: 200px;}
+margin-left: 200px;
+list-style-type: none;}
+.catalog-filter-list, .catalog-filter-group{
+  list-style-type: none;
+}
 .catalog-goods{
   display: flex;
 justify-content: center;}
 .product-list{
   display: flex;
   width: 760px;
-height: 1067px;
 flex-wrap: wrap;
+list-style-type: none;
+gap: 40px;
 }
 .pagination{display: flex;
   width: 760px;
-  height: 70px;
 justify-content: space-between;
-align-items: center;}
+align-items: center;
+list-style-type: none;}
 .page-footer {
   background-color: #444444;
 }
@@ -401,12 +412,11 @@ align-items: center;}
 .page-footer{display: flex;
   align-items: center;
   width: 1440px;
-  height: 321px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
 .footer-contacts{
-  
+
 margin-left: 139px;
 }
 .footer-navigation-services{
