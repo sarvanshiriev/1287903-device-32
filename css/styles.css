@@ -66,7 +66,7 @@ body {
   background: #ffe17f;
   color: #000000;
   width: 1160px;
-  height: 300px;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -91,6 +91,7 @@ input {
   background-color: transparent;
 }
 .navigation-link {
+  display: block;
   color: #000000;
   font-size: 16px;
   line-height: 19px;
@@ -139,13 +140,23 @@ input {
   padding-left: 0;
   padding-right: 0;
   margin-left: 60px;
+  margin-bottom: 0;
 }
+
 .link-list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 29px;
   padding-left: 60px;
   width: 1160px;
+  height: 100%;
+  padding-bottom: 27px;
+  padding-top: 33px;
+  margin: 0;
+}
+.link-list-item{
+  margin-bottom: 18px;
 }
 .navigation-item-element:nth-child(1) {
   margin-right: 304px;
@@ -186,7 +197,6 @@ input {
   
 }
 .catalog-list {
-  outline: 1px solid #666;
   margin: 0 auto;
   display: flex;
   margin-top: 70px;
@@ -277,7 +287,6 @@ margin-bottom: 97px;}
   .index-columns {
     display: flex;
     margin: 0 auto;
-    outline: 1px solid #666;
     width: 1160px;
     margin-bottom: 87px;
   }
@@ -297,15 +306,43 @@ margin-bottom: 97px;}
   .advantage-range{
     width: 497px;
 height: 202px;
+margin-bottom: 23px;
   }
   .delivery-company
   {
+    width: 497px;
+height: 120px;
     margin-bottom: 52px;
+    padding-left: 35px;
+  }
+  .pickup{
+    margin-bottom: 30px;
+  }
+  .contacts-subtitle{
+    margin-bottom: 15px;
+  }
+  .contacts-address-text{
+  margin: 0;
+  }
+  .contacts-phone{
+    margin-bottom: 30px;
+  }
+  .contacts-schedule{
+  padding-left: 0;
+  margin-bottom: 67px;
   }
   .title-mailing{
   margin: 0;
   padding: 0;
   margin-top: 75px;
+  }
+  .e-mail-advantage{
+    margin-left: 40px;
+  margin-top: 86px;
+  margin-bottom: 63px;
+  }
+  .e-mail-free{
+    margin-left:471px 
   }
 .tab-title {
   font-family: Raleway, sans-serif;
@@ -365,15 +402,12 @@ height: 202px;
 }
 
 
-.main-inner{
+.main-inner{margin: 0 auto;
   width: 1160px;
-  margin: 0 auto;
 }
-
-.inner-header {
-  width: 560px;
+.monopod{
+  margin-bottom: 14px;
 }
-
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 19px;
@@ -388,9 +422,13 @@ height: 202px;
   height: 19px;
   justify-content: space-between;
   list-style-type: none;
+  padding: 0;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 49px;
 }
 .catalog-goods {
-  display: flex;
+ display: flex;
   justify-content: center;
 }
 .catalog-filter,
@@ -400,9 +438,19 @@ height: 202px;
   width: 100%;
 }
 .products-filter {
+  margin: 0;
   background-color: #dcdcdc;
+  height: 70px;
+  width: 100%;
 }
-
+.sorting-type{
+  height: 70px;
+  margin-bottom: 69px;
+}
+.catalog-filter{
+  height: 100%;
+  margin-right: 72px;
+}
 .products-filter,
 .sorting-type {
   font-family: Raleway, sans-serif;
@@ -449,7 +497,9 @@ height: 202px;
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .pagination-link {
+  display: block;
   font-size: 16px;
   line-height: 19px;
   text-decoration: none;
@@ -467,23 +517,39 @@ height: 202px;
 
 .catalog-filter-list,
 .catalog-filter-group,
-.contacts-schedule {
+.contacts-schedule,
+.delivery-company {
   list-style-type: none;
 }
 
 .product-list {
+  margin-left: 70px;
   display: flex;
   width: 760px;
   flex-wrap: wrap;
   list-style-type: none;
   gap: 40px;
+  padding: 0;
+  margin-bottom: 44px;
 }
 .pagination {
   display: flex;
+  padding: 0;
   width: 760px;
-  justify-content: space-between;
+  height: 70px;
+  justify-content: space-around;
   align-items: center;
   list-style-type: none;
+  margin-left: 70px;
+}
+.pagination-show-more{display: block;
+  margin-left: 72px;
+  width: 760px;
+height: 55px;
+border: 3px solid #000000;
+margin-bottom: 51px;
+display: grid;
+place-items: center;
 }
 .page-footer {
   background-color: #444444;
@@ -496,24 +562,36 @@ height: 202px;
 .footer-contacts-phone {
   text-decoration: none;
 }
-
-.page-footer {
-  margin-top: auto;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+.footer-contacts-logo{
+  margin-top: 62px;
+ margin-right: 1015px;
+ margin-bottom: 35px;
 }
-.footer-contacts {
-  margin-left: 139px;
-}
+.footer-contacts{
+margin-right:114px }
 .footer-navigation-services {
+  margin: 0;
+  padding: 0;
   display: flex;
-  margin-right: 58px;
   width: 444px;
   height: 20px;
   justify-content: space-around;
+  margin-right: 58px;
 }
-.footer-social {
-  margin-left: 645px;
-  margin-right: 392px;
+.footer-social-list{display: flex;
+  flex-wrap: wrap;
+  margin-left: 506px;
+  margin-top: 53px;
+}
+.footer-social-item{
+  margin-right: 15px;
+  width: 40px;
+height: 40px;
+outline: 1px solid #ffffff;
+}
+.footer-social-item:nth-child(3n) {
+  margin-right: 0;
+}
+.htmlacademy-link{
+  margin-top: 53px;
 }
