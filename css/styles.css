@@ -91,9 +91,20 @@ body {
   justify-content: space-between;
   margin-left: 60px;
 }
+.navigation-header button{ 
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 input {
   border: none;
   background-color: transparent;
+  margin-left: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .navigation-link {
   display: block;
@@ -101,6 +112,10 @@ input {
   font-size: 16px;
   line-height: 19px;
   text-decoration: none;
+  margin-left: 0;
+}
+.navigation-icon{
+margin-right: 10px;
 }
 .navigation-element,
 .footer-navigation-link {
@@ -138,7 +153,7 @@ input {
 .navigation-services {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: space-between;
   width: 1041px;
   align-items: center;
   list-style-type: none;
@@ -147,8 +162,15 @@ input {
   margin-left: 60px;
   margin-bottom: 0;
 }
-.navigation-item-element {
+.navigation-item-element:nth-child(1) {
+  margin-right: 304px;
+}
+.navigation-item-element:nth-child(2) {
+  
   margin-right: 19px;
+}
+.navigation-item-element:nth-child(3) {
+  margin-right: 62px;
 }
 .link-list {
   display: grid;
@@ -177,24 +199,6 @@ input {
   list-style-type: none;
   margin-bottom: 18px;
 }
-.navigation-item-element:nth-child(1) {
-  margin-right: 7px;
-}
-.navigation-item-element:nth-child(2) {
-  width: 50px;
-  height: 50px;
-  outline: 1px solid #ffffff;
-  margin-right: 247px;
-}
-.navigation-item-element:nth-child(3) {
-  margin-right: 19px;
-}
-.navigation-item-element:nth-child(4) {
-  margin-right: 62px;
-}
-.navigation-item-element:nth-child(5) {
-  margin-right: 0;
-}
 
 .bestsellers {
   margin: 0 auto;
@@ -206,6 +210,10 @@ input {
   display: flex;
   width: 1161px;
   margin: 0 auto;
+}
+.second-slider,
+.third-slider{
+  display: none;
 }
 .product-slider {
   display: flex;
@@ -239,11 +247,12 @@ input {
   gap: 40px;
   padding-left: 0;
   flex-wrap: wrap;
-  margin-bottom: 169px;
+  margin-bottom: 262px;
 }
 .catalog-link {
+  position: relative;
   display: block;
-  height: 100%;
+  top:193px
 }
 .catalog-item {
   background-color: #ffe17f;
@@ -253,27 +262,27 @@ input {
   line-height: 24px;
   letter-spacing: -0.02em;
 }
-.virtual {
+.catalog-item:nth-child(1) {
   background-image: url("../img/category-1.svg");
   background-size: 160px 160px;
 }
-.monopods {
+.catalog-item:nth-child(2) {
   background-image: url("../img/category-2.svg");
   background-size: 160px 160px;
 }
-.cameras {
+.catalog-item:nth-child(3) {
   background-image: url("../img/category-3.svg");
   background-size: 160px 160px;
 }
-.fitness {
+.catalog-item:nth-child(4) {
   background-image: url("../img/category-4.svg");
   background-size: 160px 160px;
 }
-.watch {
+.catalog-item:nth-child(5){
   background-image: url("../img/category-5.svg");
   background-size: 160px 160px;
 }
-.quadrocopters {
+.catalog-item:nth-child(6) {
   background-image: url("../img/category-6.svg");
   background-size: 160px 160px;
 }
@@ -281,26 +290,56 @@ input {
   max-width: 1160px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
-.delivery {
-  background-image: url("../img/illustration-delivery.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 180px 160px;
+.services-list{
+  margin-right: 240px;
+  padding: 0;
+  margin-top: 0;
+  position: relative;
+  top: -15px;
 }
-.garanty {
-  background-image: url("../img/illustration-warranty.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 180px 160px;
+.services-item{
+  margin-bottom: 44px;
 }
-.credit {
-  background-image: url("../img/illustration-credit.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 180px 160px;
+.services-user{
+  margin: 0;
+  padding: 0;
+}
+.services-title{
+margin:0 ;
+margin-bottom: 34px;
+position: relative;
+}
+.services-description{
+position: relative;
+top:-75px;}
+.delivery::before{
+  position: absolute;
+  top:-35px;
+  left: 120%;
+  margin-left: -9px;
+  content: url("../img/illustration-delivery.png");
+}
+.garanty{
+  display: none;
+}
+.garanty::before { 
+  position: absolute;
+  top:-35px;
+  left: 120%;
+  margin-left: -9px;
+  content: url("../img/illustration-warranty.svg");
+}
+.credit{
+  display: none;
+}
+.credit::before { 
+  position: absolute;
+  top:-35px;
+  left: 120%;
+  margin-left: -9px;
+  content: url("../img/illustration-credit.svg");
 }
 
 .advantage {
@@ -315,6 +354,7 @@ input {
 .auto-delivery {
   background-image: url("../img/delivery1.svg");
   background-repeat: no-repeat;
+  background-position: 50% 50%;
   width: 125px;
   height: 100px;
   background-color: #ffe17f;
@@ -585,7 +625,8 @@ input {
 .catalog-filter-group,
 .contacts-schedule,
 .delivery-company,
-.footer-navigation-item {
+.footer-navigation-item,
+.services-item {
   list-style-type: none;
 }
 .pagination-item:nth-child(1) {
