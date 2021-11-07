@@ -191,15 +191,18 @@
                             <option value="cheap">Сначала дешевое</option>
                             <option value="expensive">Сначала дорогое</option>
                         </select>
-                        <button class="visually-hidden" type="submit">Отсортировать товары</button>
-                    </form>
-
-                    <a href="#" class="button button-up">
+                        <button class="button-sorting" type="submit">
+                            <span class="visually-hidden">Отсортировать товары</span>
+                        </button>
+                    <button class="button button-up" type="button">
+                        <svg class="up-icon" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0 11 10H0" fill="#000" opacity=".2"/></svg>
                         <span class="visually-hidden">Сверху вниз</span>
-                    </a>
-                    <a href="#" class="button button-down">
+                    </button>
+                    <button class="button button-down" type="button">
+                        <svg class="down-icon" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10 0 0h11" fill="#000"/></svg>
                         <span class="visually-hidden">Снизу вверх</span>
-                    </a>
+                    </button>
+                </form>
                     <ul class="product-list">
                         <li class="product-card">
                             <a class="product-card-link" href="#">
@@ -220,8 +223,7 @@
                             <div class="product">
                                 <a class="product-card-name" href="#">
                                     <h3 class="product-card-title">
-                                        Профессиональная<br />
-                                        селфи-палка
+                                        Профессиональная селфи-палка
                                     </h3>
                                 </a>
                                 <b class="product-card-price">1500р</b>
@@ -236,8 +238,7 @@
                             <div class="product">
                                 <a class="product-card-name" href="#">
                                     <h3 class="product-card-title">
-                                        Непотопляемая<br />
-                                        селфи-палка
+                                        Непотопляемая селфи-палка
                                     </h3>
                                 </a>
                                 <b class="product-card-price">2500р</b>
@@ -251,8 +252,7 @@
                             <div class="product">
                                 <a class="product-card-name" href="#">
                                     <h3 class="product-card-title">
-                                        Селфи-палка "следуй за<br />
-                                        мной"
+                                        Селфи-палка "следуй за мной"
                                     </h3>
                                 </a>
                                 <b class="product-card-price">4900р</b>
