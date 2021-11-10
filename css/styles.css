@@ -1025,7 +1025,7 @@ opacity: 0.5;
   background-color: #f0f0f0;
   height: auto;
 }
-/* каталог */
+/*страница каталога */
 .main-inner {
   margin: 0 auto;
   width: 1160px;
@@ -1079,7 +1079,7 @@ opacity: 0.5;
   position: absolute;
   content: url("../img/arrow.svg");
   background-color: transparent;
-  left: 76px;
+  left: 146px;
   background-repeat:no-repeat;
   opacity: 0.3;
   top:-2px;
@@ -1109,15 +1109,9 @@ opacity: 0.5;
   display: flex;
   justify-content: center;
 }
-.catalog-filter,
-.sorting-type,
 .pagination {
   background-color: #ebebeb;
   width: 100%;
-}
-.button-sorting{
-  margin-right: 300px;
-  cursor: pointer;
 }
 .button-up{
   background-color:transparent;
@@ -1126,39 +1120,101 @@ opacity: 0.5;
   justify-content: center;
   margin-right: 19px;
   cursor: pointer;
+  width: 11px;
+  height: 11px;
+  padding: 0;
+  border: none;
 }
+.up-icon{
+  fill: rgba(138, 138, 138, 0.418)
+}
+
+.button-up:hover .up-icon{
+  fill: rgba(0, 0, 0, 0.5)
+}
+.button-up:focus{
+  border: 5px solid #AF4FFF;
+  width: 30px;
+height: 30px;
+}
+.button-up:active{
+  border: none;
+}
+.button-up:active .up-icon{
+  fill: #000;
+}
+
 .button-down{
   background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  width: 11px;
+  height: 11px;
+  padding: 0;
+  border: none;
+}
+.down-icon{
+  fill: #000;
+  transform:rotate(180deg);
+}
+.button-down:hover .down-icon{
+  fill: rgba(0, 0, 0, 0.5)
+}
+.button-down:focus{
+  border: 5px solid #AF4FFF;
+  width: 30px;
+height: 30px;
 }
 .products-filter {
-  margin: 0;
   height: 70px;
-  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding-right: 169px;
+  background-color: #DCDCDC;
+}
+.products-filter::after{
+  position:absolute;
+  background-color: #DCDCDC;
+  z-index: -2;
+  content: "";
+  height: 70px;
   width: 100%;
 }
-.products-filter::before{
-position:absolute;
-content: "";
-height: 70px;
-background-color: #dcdcdc;
-background-size: auto;
-width: 100%;
-left: -150px;
-z-index: -1;
-
-}
-.sorting-type {
+.sorting-container{
+  display: flex;
+  align-items: center;
+  background-color: #EBEBEB;
   height: 70px;
   margin-bottom: 69px;
-  display: flex;
 }
-.catalog-filter {
-  height: 100%;
-  margin-right: 72px;
+.sorting-container::before{
+  position:absolute;
+  background-color: #EBEBEB;
+  z-index: -2;
+  content: "";
+  height: 70px;
+  width: 100%;
+}
+.select{
+  margin-left: 72px;
+  margin-right: 330px;
+}
+.filter-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.filter-container::before{
+  position: absolute;
+  background-color: #EBEBEB;
+  content: "";
+  z-index: -2;
+  height: 100vh;
+  width: 100%;
 }
 .products-filter,
 .sorting-type {
@@ -1168,7 +1224,26 @@ z-index: -1;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-
+.button-filter{
+  position: relative;
+}
+.button-filter::before{
+  position: absolute;
+  background: #FFC700;
+  content: "";
+  left: -20px;
+  top: 0;
+  width: 180px;
+  height: 100%;
+  z-index: -1;
+  transform: scale(1, 0.3);
+}
+.button-filter:hover::before{
+  transform: scale(1, 2);
+}
+.button-filter:active{
+  opacity: 0.3;
+}
 .catalog-filter-title {
   font-weight: 700;
   font-size: 18px;
@@ -1284,12 +1359,44 @@ z-index: -1;
 }
 
 .pagination-item:nth-child(1) {
-  margin-left: 29px;
   margin-right: 209px;
+  width: 127px;
+height: 70px;
+position: relative;
+}
+.pagination-prev{
+  position: absolute;
+  left:29px;
+  top: 35%;
+}
+.pagination-item:nth-child(1):hover{
+  background: #DCDCDC;
+}
+.pagination-item:nth-child(1):active{
+  background: rgba(220, 220, 220, 0.3)
+}
+.pagination-prev:active{
+  opacity: 0.3;
 }
 .pagination-item:nth-child(7) {
-  margin-right: 30px;
   margin-left: 157px;
+  width: 127px;
+height: 70px;
+position: relative;
+}
+.pagination-next{
+  position: absolute;
+  left:25px;
+  top: 35%;
+}
+.pagination-item:nth-child(7):hover{
+  background: #DCDCDC;
+}
+.pagination-item:nth-child(7):active{
+  background: rgba(220, 220, 220, 0.3)
+}
+.pagination-next:active{
+  opacity: 0.3;
 }
 .pagination {
   display: flex;
@@ -1320,6 +1427,17 @@ z-index: -1;
 .pagination-show-more:active{
  opacity: 0.3;
  border: 3px solid #000000;
+}
+.pagination-link:hover{
+color: #000;
+opacity: 1;
+}
+.pagination-link:focus{
+  border: 5px solid #AF4FFF;
+}
+.pagination-link:active{
+  color: rgba(220, 220, 220, 0.7);
+border: none;
 }
 /* футер */
 .page-footer {
