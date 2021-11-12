@@ -41,6 +41,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1107,7 +1108,13 @@ opacity: 0.5;
 /*страница каталога */
 .main-inner {
   margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+  flex-grow: 1;
+}
+.page-container{
   width: 1160px;
+  margin: 0 auto;
 }
 .monopod {
   margin-left: 60px;
@@ -1255,6 +1262,7 @@ height: 30px;
   flex-direction: row-reverse;
   padding-right: 169px;
   background-color: #DCDCDC;
+  position: relative;
 }
 .products-filter::after{
   position:absolute;
@@ -1262,7 +1270,21 @@ height: 30px;
   z-index: -2;
   content: "";
   height: 70px;
-  width: 100%;
+  width: 100vw;
+}
+.filter-container {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
+}
+.filter-container::before{
+  position: absolute;
+  background-color: #EBEBEB;
+  content: "";
+  z-index: -2;
+  height: 100vw;
+  width: 100vw;
 }
 .sorting-container{
   display: flex;
@@ -1270,6 +1292,7 @@ height: 30px;
   background-color: #EBEBEB;
   height: 70px;
   margin-bottom: 69px;
+  position: relative;
 }
 .sorting-container::before{
   position:absolute;
@@ -1277,24 +1300,13 @@ height: 30px;
   z-index: -2;
   content: "";
   height: 70px;
-  width: 100%;
+  min-width: 100vw;
 }
 .select{
   margin-left: 72px;
   margin-right: 330px;
 }
-.filter-container {
-  display: flex;
-  flex-direction: row-reverse;
-}
-.filter-container::before{
-  position: absolute;
-  background-color: #EBEBEB;
-  content: "";
-  z-index: -2;
-  height: 100vh;
-  width: 100%;
-}
+
 .products-filter,
 .sorting-type {
   font-family: Raleway, sans-serif;
