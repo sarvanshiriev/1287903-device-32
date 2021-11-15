@@ -1219,7 +1219,7 @@ opacity: 0.5;
 }
 .catalog-goods {
   display: flex;
-  justify-content: center;
+  justify-content: start;
 }
 .pagination {
   background-color: #ebebeb;
@@ -1279,6 +1279,9 @@ height: 30px;
   width: 30px;
 height: 30px;
 }
+.filter{
+  width: 328px;
+}
 .products-filter {
   height: 70px;
   margin-top: 0;
@@ -1286,7 +1289,7 @@ height: 30px;
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
-  padding-right: 169px;
+  padding-right: 160px;
   background-color: #DCDCDC;
   position: relative;
 }
@@ -1312,6 +1315,10 @@ height: 30px;
   height: 100vw;
   width: 100vw;
 }
+.catalog-filter{
+  margin-top: 83px;
+  margin-right: 35px;
+}
 .sorting-container{
   display: flex;
   align-items: center;
@@ -1331,8 +1338,27 @@ height: 30px;
 .select{
   margin-left: 72px;
   margin-right: 330px;
+  display: flex;
 }
-
+.select-title{
+  margin-right: 36px;
+}
+.select-control{
+  outline: none;
+  width: 217px;
+height: 30px;
+  border: none;
+  background-color: transparent;
+  font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+appearance: none;
+background-image: url("../img/catalog/select.svg");
+background-repeat: no-repeat;
+background-position:right 12px center;
+}
 .products-filter,
 .sorting-type {
   font-family: Raleway, sans-serif;
@@ -1343,6 +1369,7 @@ height: 30px;
 }
 .button-filter{
   position: relative;
+  left: 23px;
 }
 .button-filter::before{
   position: absolute;
@@ -1361,13 +1388,117 @@ height: 30px;
 .button-filter:active{
   opacity: 0.3;
 }
+.button-filter::after{
+  width: 200px;
+  position: absolute;
+  height: 2px;
+  background-color: #000;
+  content: "";
+  top: -184px;
+  left: -23px;
+}
+.range-scale{
+  left: 0;
+  top: 0;
+  position: relative;
+  width: 200px;
+height: 2px;
+background-color: #DCDCDC;
+margin-bottom: 15px;
+}
+.range-scale::before{
+  width: 200px;
+  position: absolute;
+  height: 2px;
+  background-color: #000;
+  content: "";
+  top: 69px;
+}
+.range-scale::after{
+  width: 200px;
+  position: absolute;
+  height: 2px;
+  background-color: #000;
+  content: "";
+  top: -71px;
+}
+.toggle{
+  position: absolute;
+  width: 119px;
+  height: 2px;
+  background-color: #000;
+  left: 0;
+  top: 0;
+}
+.range-toggle{
+  position: absolute;
+  width: 18px;
+height: 18px;
+border-radius: 50%;
+border: 2px solid #000000;
+background-color: #EBEBEB;
+cursor: pointer;
+}
+.toggle-min{
+top:-8px;
+}
+.toggle-max{
+  top:-8px;
+left:119px
+}
+.range-wrapper-inputs{
+  display: flex;
+  justify-content:start;
+}
+.range-input{
+  width: 10px;
+  font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+background-color: transparent;
+  border: none;
+  appearance: textfield;
+  margin-right: 66px;
+}
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+.catalog-filter-group{
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-bottom: 48px;
+}
+.catalog-filter-label{
+  display: flex;
+}
 .catalog-filter-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
+  margin-bottom: 25px;
 }
-.control {
+.catalog-filter-item{
+  margin-bottom: 15px;
+}
+.pink{
+  margin-bottom: 0;
+}
+.bluetooh{
+  margin-bottom: 0;
+}
+.catalog-filter-list{
+  margin: 0;
+  padding: 0;
+}
+.control-label {
+  margin-left: 37px;
   font-size: 16px;
   line-height: 19px;
   text-decoration: none;
@@ -1375,6 +1506,48 @@ height: 30px;
   outline: 0;
   background-color: transparent;
 }
+.control {
+  position: relative;
+  display: block;}
+  .control-mark {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    background: #EBEBEB;
+    left:2px;
+    top:5px;
+    box-sizing: border-box;
+  }
+  .control-input[type="checkbox"]:checked + .control-mark::before{
+    position: absolute;
+    content: url("../img/catalog/checked.svg");
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+top:-7px;
+left:3px;
+  }
+  .control-input[type="checkbox"]:checked+ .control-mark{
+    border-color: #000;
+  }
+  .control-input[type="radio"] + .control-mark {
+    border-radius: 50%;
+  }
+  .control-input[type="radio"]:checked + .control-mark::before {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: #242424;
+    border-radius: 50%;
+    content: "";}
+    .control-input[type="radio"]:checked + .control-mark{
+      border-color: #000;
+    }
+
 .product-list {
   display: grid;
   grid-template-columns: 360px 360px;

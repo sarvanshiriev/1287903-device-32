@@ -112,6 +112,8 @@
                     <form class="catalog-filter" action="#" method="get" name="filter">
                         <fieldset class="catalog-filter-group">
                             <legend class="catalog-filter-title">Стоимость</legend>
+                            <div class="range">
+                            <div class="range-scale">
                             <div class="toggle">
                                 <button class="range-toggle toggle-min" type="button">
                                     <span class="visually-hidden">Изменить минимальную цену</span>
@@ -120,8 +122,12 @@
                                     <span class="visually-hidden">Изменить максимальную цену</span>
                                 </button>
                             </div>
-                            <label class="catalog-filter-label"> от<input class="catalog-filter-input" type="number" name="min-price" /> </label>
-                            <label class="catalog-filter-label"> до<input class="catalog-filter-input" type="number" name="max-price" /> </label>
+                        </div>
+                            <div class="range-wrapper-inputs">
+                            <label class="catalog-filter-label"> от<input class="range-input" type="number" value="0" name="min-price" /> </label>
+                            <label class="catalog-filter-label"> до<input class="range-input" type="number" value="5000" name="max-price" style="width: 37px"/> </label>
+                        </div>
+                    </div>
                         </fieldset>
                         <fieldset class="catalog-filter-group">
                             <legend class="catalog-filter-title">Цвет</legend>
@@ -129,36 +135,36 @@
                                 <li class="catalog-filter-item">
                                     <label class="control">
                                         <input class="visually-hidden control-input" type="checkbox" name="black" checked />
-
-                                        <span class="cotrol">Черный</span>
+                                        <span class="control-mark"></span>
+                                        <span class="control-label">Черный</span>
                                     </label>
                                 </li>
                                 <li class="catalog-filter-item">
                                     <label class="control">
                                         <input class="visually-hidden control-input" type="checkbox" name="white" checked />
-
-                                        <span class="cotrol">Белый</span>
+                                        <span class="control-mark"></span>
+                                        <span class="control-label">Белый</span>
                                     </label>
                                 </li>
                                 <li class="catalog-filter-item">
                                     <label class="control">
                                         <input class="visually-hidden control-input" type="checkbox" name="blue" />
-
-                                        <span class="cotrol">Синий</span>
+                                        <span class="control-mark"></span>
+                                        <span class="control-label">Синий</span>
                                     </label>
                                 </li>
                                 <li class="catalog-filter-item">
                                     <label class="control">
                                         <input class="visually-hidden control-input" type="checkbox" name="red" />
-
-                                        <span class="cotrol">Красный</span>
+                                        <span class="control-mark"></span>
+                                        <span class="control-label">Красный</span>
                                     </label>
                                 </li>
-                                <li class="catalog-filter-item">
+                                <li class="catalog-filter-item pink">
                                     <label class="control">
                                         <input class="visually-hidden control-input" type="checkbox" name="pink" />
-
-                                        <span class="cotrol">Розовый</span>
+                                        <span class="control-mark"></span>
+                                        <span class="control-label">Розовый</span>
                                     </label>
                                 </li>
                             </ul>
@@ -169,15 +175,15 @@
                                 <li class="catalog-filter-item">
                                     <label class="control">
                                         <input class="visually-hidden control-input" type="radio" name="there-is" value="yes" checked />
-
-                                        <span class="cotrol">Есть</span>
+                                        <span class="control-mark"></span>
+                                        <span class="control-label">Есть</span>
                                     </label>
                                 </li>
-                                <li class="catalog-filter-item">
+                                <li class="catalog-filter-item bluetooh">
                                     <label class="control">
                                         <input class="visually-hidden control-input" type="radio" name="there-is" value="not" />
-
-                                        <span class="cotrol">Нет</span>
+                                        <span class="control-mark"></span>
+                                        <span class="control-label">Нет</span>
                                     </label>
                                 </li>
                             </ul>
@@ -190,8 +196,8 @@
                     <div class="sorting-container">
                     <form class="sorting-type" action="#" method="get" name="sorting-product">
                         <div class="select">
-                        <label for="sorting-product">Сортировка:</label>
-                        <select class="control" id="sorting-product" name="sorting-product">
+                        <label class="select-title" for="sorting-product">Сортировка:</label>
+                        <select class="select-control" id="sorting-product" name="sorting-product">
                             <option value="popular">Сначала популярные</option>
                             <option value="cheap">Сначала дешевое</option>
                             <option value="expensive">Сначала дорогое</option>
