@@ -349,7 +349,7 @@
                     <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post" name="mailing">
                         <p class="newsletter-email">
                             <label class="visually-hidden" for="newsletter-email">Email</label>
-                            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required />
+                            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"  />
                         </p>
 
                         <button class="button newsletter-button" type="submit">
@@ -465,5 +465,58 @@
                 </a>
             </div>
         </footer>
+        <div class="modal-container">
+            <div class="modal modal-delivery">
+               <div class="modal-content">
+<h2 class="modal-title">Доставка под заказ</h2>
+<button class="modal-close-button"><span class="visually-hidden">Закрыть</span></button>
+</div>
+<form class="delivery-modal-form" action="https://echo.htmlacademy.ru/" method="post">
+    <p class="delivery-modal-name">
+        <label class="modal-form-label modal-field" for="modal-delivery-name">
+          Ваше имя:
+        </label>
+        <input class="delivery-name modal-input" type="text" id="modal-delivery-name" name="delivery-name" placeholder="Имя Фамилия">
+        <span class="modal-subtext">Пожалуйста, представьтесь</span>
+      </p>
+      <p class="delivery-modal-email">
+        <label class="modal-form-email modal-field" for="modal-delivery-email">Ваш e-mail:</label>
+        <input class="delivery-email modal-input"  placeholder="Введите e-mail" type="email" name="delivery-email" id="modal-delivery-email" >
+        <span class="modal-subtext">Забавный у вас адрес</span> 
+    </p>
+      <p class="delivery-modal-message">
+        <label class="modal-form-message modal-field" for="modal-delivery-message">
+          Что нужно привезти:
+        </label>
+        <input class="delivery-message modal-input" type="text" id="modal-delivery-message" name="message-name" placeholder="В свободной форме">
+      </p>
+      <p class="delivery-modal-number">
+        <label class="modal-form-number modal-field" for="modal-delivery-number">
+          Количество:
+        </label>
+        <button class="modal-info" type="button">
+            <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+        </button>
+        <input class="delivery-number modal-input" type="number" id="modal-delivery-number" name="number-name" placeholder="1">
+        <button class="button-minus button-number" type="button">
+            <svg class="modal-image" width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 0H0V2H16V0Z" />
+                </svg>        
+            <span class="visually-hidden">Минус</span>
+        </button>
+        <button class="button-plus button-number" type="button">
+            <svg class="modal-image" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" /></svg>
+            <span class="visually-hidden">Плюс</span>
+        </button>
+        <div class="popover-modal">
+            <p class="popover-modal-text">
+                Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+            </p>
+        </div>
+      </p>
+      <button class="modal-button button" type="submit">Отправить</button>
+      </form>
+            </div>
+        </div>
     </body>
 </html>
