@@ -15,7 +15,8 @@
             <nav class="navigation">
                 <div class="navigation-header">
                     <form class="search-line" action="https://echo.htmlacademy.ru" method="get" name="search">
-                        <input class="header-search" type="search" name="finder" placeholder="Поиск по сайту" required autocomplete="off" />
+                        <label for="search" class="visually-hidden">Поиск по сайту</label>
+                        <input class="header-search" type="search" name="finder" placeholder="Поиск по сайту" required autocomplete="off" id="search">
                         <button class="button-search" type="submit">Найти</button>
                     </form>
                     <ul class="navigation-user">
@@ -75,7 +76,7 @@
                                         <p>Сумма:2000р</p>
                                     </div>
                                 </div>
-                                <button class="cart-open">
+                                <button class="cart-open button">
                                     Открыть корзину
                                 </button>
                             </div>
@@ -85,7 +86,7 @@
                 <div class="navigation-elements">
                     <ul class="navigation-services">
                         <li class="navigation-item-element">
-                            <a class="navigation-element" href="#">Каталог товаров</a>
+                            <a class="navigation-element button" href="#">Каталог товаров</a>
                             <div class="navigation-catalog">
                                 <ul class="link-list">
                                     <li class="link-list-item">
@@ -110,15 +111,15 @@
                             </div>
                         </li>
                         <li class="navigation-item-element">
-                            <a class="navigation-element" href="#">Доставка</a>
+                            <a class="navigation-element button" href="#">Доставка</a>
                         </li>
 
                         <li class="navigation-item-element">
-                            <a class="navigation-element" href="#">Гарантия</a>
+                            <a class="navigation-element button" href="#">Гарантия</a>
                         </li>
 
                         <li class="navigation-item-element">
-                            <a class="navigation-element" href="#">Контакты</a>
+                            <a class="navigation-element button" href="#">Контакты</a>
                         </li>
                     </ul>
                 </div>
@@ -289,7 +290,7 @@
             </section>
             <section class="advantage">
                 <span class="auto-delivery"></span>
-                <h2 class="order">Доставим редкий товар под заказ</h2>
+                <button class="order button" type="button">Доставим редкий товар под заказ</h2>
                 <button class="info" type="button">
                     <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
@@ -345,7 +346,7 @@
                     <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post" name="mailing">
                         <p class="newsletter-email">
                             <label class="visually-hidden" for="newsletter-email">Email</label>
-                            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" />
+                            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
                         </p>
 
                         <button class="button newsletter-button" type="submit">
@@ -360,7 +361,7 @@
             </section>
         </main>
         <footer class="page-footer">
-            <div class="convenience">
+            <div class="footer-container">
                 <a class="footer-device-logo" href="index.html">
                     <img class="footer-contacts-logo" src="img/logo2.svg" width="145" height="36" alt="Логотип Магазин «Девайс»" />
                 </a>
@@ -375,15 +376,15 @@
                 <section class="footer-services">
                     <ul class="footer-navigation-services">
                         <li class="footer-navigation-item">
-                            <a class="footer-navigation-link" href="#">Доставка</a>
+                            <a class="footer-navigation-link button" href="#">Доставка</a>
                         </li>
 
                         <li class="footer-navigation-item">
-                            <a class="footer-navigation-link" href="#">Гарантия</a>
+                            <a class="footer-navigation-link button" href="#">Гарантия</a>
                         </li>
 
                         <li class="footer-navigation-item">
-                            <a class="footer-navigation-link" href="#">Контакты</a>
+                            <a class="footer-navigation-link button" href="#">Контакты</a>
                         </li>
                     </ul>
                 </section>
@@ -429,8 +430,8 @@
                         </li>
                     </ul>
                 </section>
-                <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-                    <svg class="navigation-academy" width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a class="htmlacademy-link" href="https://htmlacademy.ru/" >
+                    <svg class="navigation-academy" width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Сайт html-академии">
                         <path d="M0 12.8999V15.4999H2.5V12.8999H0Z" />
                         <path d="M11.6 4.5C10 4.5 8.80002 5.2 8.00002 6.2H7.90002V0H5.90002V15.5H7.90002V10.2C7.90002 8.1 9.20002 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z" />
                         <path d="M26.6 4.8001H21.8V1.1001H19.8V4.9001H17.9V6.9001H19.8V12.9001C19.8 14.6001 20.8 15.6001 22.5 15.6001H26.6V13.6001H22.9C22.2 13.6001 21.8 13.2001 21.8 12.5001V6.8001H26.6V4.8001Z" />
