@@ -117,7 +117,7 @@ body {
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
-  
+
 }
 .button-search {
   width: 160px;
@@ -465,12 +465,13 @@ body {
   border-radius: 25px;
   padding: 14px 20px 15px;
   border: none;
+  width: 236px;
 }
-.navigation-item-element:nth-child(1) {
+.navigation-item-element-catalog {
   position: relative;
-  margin-right: 266px;
+  margin-right: 265px;
 }
-.navigation-item-element:nth-child(1)::before {
+.navigation-item-element-catalog::before {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -484,17 +485,20 @@ body {
   background-position: center;
   opacity: 0.2;
 }
-.navigation-item-element:nth-child(1):hover::before {
+.navigation-item-element-catalog:hover::before {
   background-image: url("../img/minus.svg");
   opacity: 1;
 }
-.navigation-item-element:nth-child(1):active::before {
+.navigation-item-element-catalog:active::before {
   background-image: url("../img/minus.svg");
   opacity: 0.3;
 }
 .navigation-element:hover {
   border-radius: 0;
   border-bottom: 2px solid #000000;
+}
+.navigation-element-catalog:hover{
+  border-bottom:none;
 }
 .navigation-element:focus {
   border: 2px solid #af4fff;
@@ -506,7 +510,7 @@ body {
   opacity: 0.3;
   border-bottom: 2px solid #000000;
 }
-.navigation-item-element:nth-child(1):active {
+.navigation-element-catalog:active {
   opacity: 0.3;
 }
 .navigation-item-element:nth-child(2) {
@@ -526,16 +530,19 @@ body {
   position: absolute;
   width: 1160px;
   left: -40px;
-  top:43px ;
+  top:42px ;
   padding-bottom: 50px;
   padding-top: 33px;
   background-color: #FFE17F;
-  z-index: 3;
+  z-index: 4;
   display: none;
 }
-.navigation-item-element:nth-child(1):hover  .navigation-catalog{
-display: block;
+.navigation-catalog:hover{
+  display: block;
 }
+.navigation-element-catalog:hover +.navigation-catalog{
+  display: block;
+  }
 .link-list {
   display: grid;
   grid-template-columns: 220px 150px min-content;
@@ -599,7 +606,7 @@ display: block;
   width: 1161px;
   margin: 0 auto;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 .first-slider::before {
   position: absolute;
