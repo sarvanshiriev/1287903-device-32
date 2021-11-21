@@ -213,7 +213,7 @@ body {
   font-size: 16px;
   text-decoration: none;
   height: 100%;
-  border: 2px solid #FFE17F;;
+  border: 2px solid transparent;
   border-radius: 20px;
   padding-left: 17px;
   padding-right: 21px;
@@ -461,10 +461,9 @@ body {
   margin-right: 0;
 }
 .navigation-element {
-  border: 2px solid #af4fff;
+  border: 2px solid transparent;
   border-radius: 25px;
   padding: 14px 20px 15px;
-  border: none;
   width: 236px;
 }
 .navigation-item-element-catalog {
@@ -571,14 +570,13 @@ body {
 .link-list .navigation-link {
   width: max-content;
   height: max-content;
-  border: 2px solid #af4fff;
+  border: 2px solid transparent;
   border-radius: 20px;
   line-height: 19px;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 3px;
   padding-top: 3px;
-  border: none;
 }
 .link-list .navigation-link:focus {
   border: 2px solid #af4fff;
@@ -695,6 +693,12 @@ body {
   cursor: pointer;
   border: none;
   z-index: 5;
+}
+.slider-button-move{
+  width: 40px;
+  height: 80px;
+  border:2px solid transparent;
+  border-radius: 6px;
 }
 .slider-button-move:hover .slider-icon {
   fill: rgba(0, 0, 0, 0.705);
