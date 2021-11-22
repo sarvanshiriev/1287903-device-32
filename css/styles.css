@@ -186,10 +186,14 @@ body {
   margin-top: 40px;
 }
 .main-header-index{
+  padding-left: 140px;
+  padding-right: 140px;
   padding-bottom: 160px;
 }
 .main-header-catalog{
-  padding-bottom: 53px;
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-bottom: 46px;
 }
 .device-logo {
   margin-left: 60px;
@@ -593,6 +597,8 @@ body {
   opacity: 0.3;
 }
 .main-index{
+  padding-left: 140px;
+  padding-right: 140px;
   margin-top: -149px;
 }
 /* слайдер */
@@ -962,7 +968,7 @@ margin-right: 198px;
   padding: 0;
   margin-bottom: 120px;
 }
-.tab-title {
+.slider-title {
   margin-top: 48px;
 }
 .title-delivery,
@@ -1123,17 +1129,54 @@ margin-right: 237px;
 
 /* О нас  */
 .button-about {
+  margin-left: 20px;
   position: relative;
   width: 260px;
   cursor: pointer;
+}
+.button-write {
+  margin-left: 34px;
+  position: relative;
+  width: 260px;
+  cursor: pointer;
+}
+
+.button-write::after {
+  position: absolute;
+  background: #ffc700;
+  content: "";
+  left: -35px;
+  top: 0;
+  width: 260px;
+  height: 100%;
+  z-index: -1;
+  transform: scale(1, 0.3);
+}
+.button-write:focus::after {
+  background: #af4fff;
+}
+.button-write:hover::after {
+  background: transparent;
+}
+.button-write:hover::after {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffc700;
+  transform: scale(1, 2);
+}
+.button-write:active::after {
+  opacity: 0.3;
 }
 .button-about::after {
   position: absolute;
   background: #ffc700;
   content: "";
-  left: 0;
+  left: -20px;
   top: 0;
-  width: 100%;
+  width: 260px;
   height: 100%;
   z-index: -1;
   transform: scale(1, 0.3);
@@ -1160,7 +1203,7 @@ margin-right: 237px;
   display: flex;
   margin: 0 auto;
   width: 1160px;
-  margin-bottom: 87px;
+  margin-bottom: 79px;
 }
 .about-us {
   width: 560px;
@@ -1184,20 +1227,22 @@ margin-right: 237px;
   padding: 0;
   margin: 0;
   margin-top: 49px;
-  margin-bottom: 26px;
+  margin-bottom: 46px;
   position: relative;
 }
 
 .advantage-range {
   width: 497px;
-  height: 202px;
-  margin-bottom: 23px;
+  margin-bottom: 71px;
+}
+.choice{
+  margin-bottom: 30px;
 }
 .delivery-company {
   width: 497px;
   height: 120px;
   margin-bottom: 52px;
-  padding-left: 26px;
+  padding-left: 27px;
 }
 .pickup {
   margin-bottom: 30px;
@@ -1208,13 +1253,13 @@ margin-right: 237px;
 }
 .contacts-address-text {
   margin: 0;
+  font-style: normal;
+
 }
-.contacts-phone {
-  margin-bottom: 30px;
-}
+
 .contacts-schedule {
   padding-left: 0;
-  margin-bottom: 67px;
+  margin-bottom: 62px;
 }
 /* Подписка */
 .subscription {
@@ -1225,14 +1270,16 @@ margin-right: 237px;
   height: 100%;
   margin: 0 auto;
   column-gap: 40px;
-  row-gap: 50px;
+  row-gap: 25px;
   padding-top: 75px;
-  padding-bottom: 131px;
+  padding-bottom: 111px;
 }
 
 .e-mail-advantage {
   grid-column: 2/3;
   grid-row: 1/2;
+    width: 530px;
+margin-top: 13px;
 }
 .newsletter-email {
   padding: 0;
@@ -1250,7 +1297,7 @@ margin-right: 237px;
   outline: none;
   border: none;
   border-bottom: 3px solid rgba(220, 220, 220, 0.7);
-  width: 601px;
+  width: 597px;
   height: 50px;
   margin: 0;
 }
@@ -1278,7 +1325,7 @@ margin-right: 237px;
 }
 
 .e-mail-free {
-  margin-left: 151px;
+  margin-left: 170px;
   position: relative;
 }
 .e-mail-free::before {
@@ -1287,7 +1334,7 @@ margin-right: 237px;
   height: 14px;
   background-image: url("../img/mark.svg");
   content: "";
-  left: -30px;
+  left: -35px;
   top: 20%;
 }
 .title-mailing {
@@ -1300,6 +1347,7 @@ margin-right: 237px;
   width: 260px;
   height: 55px;
   padding: 0;
+  box-sizing: border-box;
 }
 .newsletter-button:hover {
   color: white;
@@ -1313,9 +1361,7 @@ margin-right: 237px;
   background: #000000;
   color: rgba(220, 220, 220, 0.3);
 }
-.e-mail-advantage {
-  width: 530px;
-}
+
 .option {
   font-size: 16px;
 }
@@ -1334,10 +1380,9 @@ margin-right: 237px;
 .contacts-subtitle {
   font-weight: 700;
   font-size: 24px;
+  margin-top: 30px;
 }
-.contacts-address-text {
-  font-style: normal;
-}
+
 .contacts-phone {
   font-style: normal;
   color: #000;
@@ -1346,6 +1391,8 @@ margin-right: 237px;
   font-weight: 700;
   font-size: 18px;
   position: relative;
+  padding-left: 9px;
+  margin-bottom:10px;
 }
 .delivery-company-item::before {
   position: absolute;
@@ -1365,10 +1412,13 @@ margin-right: 237px;
 }
 /*страница каталога */
 .main-inner {
+  padding-left: 140px;
+  padding-right: 140px;
   margin: 0 auto;
   overflow: hidden;
   width: 100%;
   flex-grow: 1;
+  padding: 0;
 }
 .page-container {
   width: 1160px;
@@ -1376,8 +1426,9 @@ margin-right: 237px;
 }
 .monopod {
   margin-left: 60px;
-  margin-bottom: 14px;
+  margin-top: 40px;
   position: relative;
+  margin-bottom: 15px;
 }
 
 .breadcrumbs-link {
@@ -1401,26 +1452,26 @@ margin-right: 237px;
 }
 .breadcrumbs-item:nth-child(1) {
   position: relative;
-  margin-right: 36px;
+  margin-right: 26px;
 }
 .breadcrumbs-item:nth-child(1):before {
   position: absolute;
   content: url("../img/arrow.svg");
   background-color: transparent;
-  left: 88px;
+  left: 83px;
   background-repeat: no-repeat;
   opacity: 0.3;
   top: -2px;
 }
 .breadcrumbs-item:nth-child(2) {
   position: relative;
-  margin-right: 34px;
+  margin-right: 24px;
 }
 .breadcrumbs-item:nth-child(2):before {
   position: absolute;
   content: url("../img/arrow.svg");
   background-color: transparent;
-  left: 156px;
+  left: 148px;
   background-repeat: no-repeat;
   opacity: 0.3;
   top: -2px;
@@ -1433,8 +1484,8 @@ margin-right: 237px;
   padding: 0;
   align-items: center;
   margin: 0;
-  margin-bottom: 49px;
-  margin-left: 58px;
+  margin-bottom: 44px;
+  margin-left: 55px;
 }
 .catalog-goods {
   display: flex;
@@ -1450,7 +1501,7 @@ margin-right: 237px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 19px;
+  margin-right: 1px;
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -1562,13 +1613,13 @@ margin-right: 237px;
   min-width: 100vw;
 }
 .select {
-  margin-left: 72px;
-  margin-right: 270px;
+  margin-left: 85px;
+  margin-right: 285px;
   display: flex;
   align-items: center;
 }
 .select-title {
-  margin-right: 36px;
+  margin-right: 32px;
 }
 .select-control {
   outline: none;
@@ -1583,10 +1634,10 @@ margin-right: 237px;
   appearance: none;
   background-image: url("../img/catalog/select.svg");
   background-repeat: no-repeat;
-  background-position: right 15px center;
+  background-position: right 30px center;
   border: 5px solid transparent;
   box-sizing: content-box;
-  padding-left: 13px;
+  padding-left: 15px;
 }
 .select-control:focus {
   border: 5px solid #af4fff;
@@ -1607,15 +1658,16 @@ margin-right: 237px;
 }
 .button-filter {
   position: relative;
-  left: 23px;
+  left: 35px;
+  top:45px;
 }
 .button-filter::before {
   position: absolute;
   background: #ffc700;
   content: "";
-  left: -20px;
+  left: -33px;
   top: 0;
-  width: 180px;
+  width: 200px;
   height: 100%;
   z-index: -1;
   transform: scale(1, 0.3);
@@ -1632,17 +1684,17 @@ margin-right: 237px;
   height: 2px;
   background-color: #000;
   content: "";
-  top: -184px;
-  left: -23px;
+  top: -173px;
+  left: -35px;
 }
 .range-scale {
   left: 0;
-  top: 0;
+  top: 12px;
   position: relative;
   width: 200px;
   height: 2px;
   background-color: #dcdcdc;
-  margin-bottom: 15px;
+  margin-bottom: 26px;
 }
 .range-scale::before {
   width: 200px;
@@ -1658,7 +1710,7 @@ margin-right: 237px;
   height: 2px;
   background-color: #000;
   content: "";
-  top: -71px;
+  top: -70px;
 }
 .toggle {
   position: absolute;
@@ -1709,7 +1761,7 @@ margin-right: 237px;
 }
 .toggle-max {
   top: -8px;
-  left: 119px;
+  left: 109px;
 }
 .range-wrapper-inputs {
   display: flex;
@@ -1737,7 +1789,9 @@ margin-right: 237px;
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 48px;
+}
+.catalog-filter-group-price{
+  margin-bottom: 43px;
 }
 .catalog-filter-title {
   font-weight: 700;
@@ -1746,8 +1800,17 @@ margin-right: 237px;
   letter-spacing: -0.02em;
   margin-bottom: 25px;
 }
+.catalog-filter-title-color{
+  margin-bottom: 18px;
+}
+.catalog-filter-group-color{
+  margin-bottom: 50px;
+}
+.catalog-filter-title-bluetooth{
+margin-bottom: 18px;
+}
 .catalog-filter-item {
-  margin-bottom: 15px;
+  margin-bottom: 9px;
 }
 .pink {
   margin-bottom: 0;
@@ -1849,7 +1912,7 @@ margin-right: 237px;
 .product-list {
   display: grid;
   grid-template-columns: 360px 360px;
-  margin-left: 72px;
+  margin-left: 85px;
   list-style-type: none;
   column-gap: 40px;
   row-gap: 44px;
@@ -1863,8 +1926,8 @@ margin-right: 237px;
   display: flex;
   align-items: flex-start;
   padding-top: 0;
-  justify-content: space-between;
-  margin-top: 32px;
+  justify-content: flex-start;
+  margin-top: 19px;
 }
 .product-card{
   display: flex;
@@ -1898,6 +1961,17 @@ left:273px;
   color: #000;
   text-decoration: none;
   width: 280px;
+  margin-right: 15px;
+}
+.product-card-name-amateur{
+  margin-right: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #000;
+  text-decoration: none;
+  width: 280px;
 }
 .product-card-image {
   border: 5px solid transparent;
@@ -1918,8 +1992,11 @@ margin-top: -5px;
   margin: 0;
 }
 .product-card-price {
-  line-height: 21px;
-  font-weight: 400;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+text-align: right;
 }
 .product-card-button {
   position: absolute;
@@ -1967,9 +2044,9 @@ margin-top: -5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 150px;
   border: 5px solid transparent;
   box-sizing: border-box;
+  margin-right: 170px;
 }
 .pagination-prev:hover {
   background: #dcdcdc;
@@ -1988,9 +2065,9 @@ margin-top: -5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 150px;
   border: 5px solid transparent;
   box-sizing: border-box;
+  margin-left: 125px;
 }
 .pagination-next:hover {
   background: #dcdcdc;
@@ -2011,13 +2088,13 @@ margin-top: -5px;
   height: 70px;
   align-items: center;
   list-style-type: none;
-  margin-left: 70px;
+  margin-left: 85px;
   justify-content: space-between;
   margin-bottom: 77px;
 }
 .pagination-show-more {
   display: block;
-  margin-left: 72px;
+  margin-left: 86px;
   width: 760px;
   height: 55px;
   border: 3px solid rgba(0, 0, 0, 0.1);
@@ -2067,8 +2144,10 @@ margin-top: -5px;
 }
 /* футер */
 .page-footer {
+  padding-left: 140px;
+  padding-right: 140px;
   background-color: #444444;
-  padding-top: 137px;
+  padding-top: 133px;
   padding-bottom: 61px;
 }
 .footer-container {
@@ -2077,13 +2156,17 @@ margin-top: -5px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  justify-content: flex-start;
 }
 .footer-device-logo{
   width: 145px;
   height: 36px;
   position: absolute;
-  top: -146px;
-  left: 0;
+  top: -147px;
+  left: -2px;
+}
+.footer-contacts-logo {
+  margin-top: 76px;
 }
 .footer-contacts-address-text {
   width: 248px;
@@ -2130,9 +2213,10 @@ margin-top: -5px;
   border-radius: 25px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: 25px;
 }
 .footer-phone {
-  margin-left: auto;
+  margin-left: 45px;
 }
 .footer-contacts-phone:hover {
   color: #ffc700;
@@ -2147,21 +2231,17 @@ margin-top: -5px;
   color: #ffc700;
   opacity: 0.3;
 }
-.footer-contacts-logo {
-  margin-top: 72px;
-  margin-right: 1515px;
-  margin-bottom: 35px;
-}
+
 .footer-contacts {
-  margin-right: 114px;
+  margin-right: 92px;
 }
 .footer-navigation-services {
   margin: 0;
   padding: 0;
   display: flex;
-  width: 520px;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-right: 60px;
 }
 .footer-navigation-item {
   margin-right: 7px;
@@ -2178,10 +2258,12 @@ margin-top: -5px;
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 480px;
-  margin-top: 53px;
+  margin-left: 460px;
+  margin-top: 43px;
   list-style-type: none;
   position: relative;
+  width: 150px;
+  justify-content: space-between;
 }
 .footer-social-list::before {
   position: absolute;
@@ -2189,8 +2271,8 @@ margin-top: -5px;
   content: "";
   height: 7px;
   width: 80px;
-  top: 25%;
-  left: -480px;
+  top: 45%;
+  left: -461px;
 }
 .footer-social-item {
   margin: 5px;
@@ -2249,13 +2331,13 @@ margin-top: -5px;
 .htmlacademy-link {
   width: 135px;
   height: 53px;
-  margin-top: 53px;
+  margin-top: 40px;
   margin-left: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid transparent;
+  border: 2px solid transparent ;
   border-radius: 10px;
 }
 .htmlacademy-link:hover .navigation-academy {
